@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <div id="container">
+    <object class="block" id="europe_countries_map" data="countries-europe.svg" type="image/svg+xml"></object>
+    <div class="block hidden" id="country_info">
+      <img id="flag" src="">
+      <span id="country_name"></span>
+      <span id="is_member_of_un"></span>
+      <span id="currencies"></span>
+      <span id="capitals"></span>
+      <span id="borders"></span>
+    </div>
+  </div>
+
+  <style>
+    .block {
+      border: 5px solid lightblue;
+      display: inline-block;
+    }
+
+    #europe_countries_map {
+      width: 646px;
+      height: 655px;
+    }
+
+    #country_info {
+      vertical-align: top;
+      width: 500px;
+    }
+
+    #country_info * {
+      display: block;
+      font-weight: bold;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script src="index.js"></script>
+</body>
+</html>
