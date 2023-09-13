@@ -44,7 +44,7 @@ async function countryMouseoverHandler(event) {
 
     // Update the currencies element with the country's currencies
     currencies.innerText = 'Currencies: ' + Object.entries(country_data.currencies)
-      .map(currency => `${currency[0]} (${currency[1]?.symbol})`)
+      .map(([currency_name, currency_info]) => `${currency_name} (${currency_info?.symbol})`)
       .join(', ');
 
     // Update the capitals element with the country's capitals
